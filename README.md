@@ -1,37 +1,36 @@
-# beauty-pc
+# Technology
 
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+npm start
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+npm build
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+npm lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
-# 一、@vuew/cli搭建项目
+
+### 一、@vuew/cli搭建项目
 + npm run @vue/cli -g
 + vue create beauty-pc
 
-# 二、安装sass
+### 二、安装sass
 + npm install node-sass@4.14.1 --save-dev
 + npm install sass-loader@8.0.2 --save-dev 
 
-# 三、安装vue-router
+### 三、安装vue-router
 + npm install vue-router
 + 在main.js文件中
 import router from './router/index.js'
@@ -58,5 +57,5 @@ export default new VueRouter({
 	]
 })
 
-# 四、集成element-UI
+### 四、集成element-UI
 + npm i element-ui -S
