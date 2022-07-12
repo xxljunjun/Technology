@@ -54,7 +54,7 @@ module.exports = {
     // 让浏览器 overlay 同时显示警告和错误
     overlay: {
       warnings: false,
-      errors: true,
+      errors: false,
     },
     //配置 DevServer的服务器监听地址
     // host: "127.0.0.0",
