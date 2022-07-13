@@ -40,7 +40,7 @@ module.exports = {
   configureWebpack: (config) => {},
   //是否使用css分离插件 ExtractTextPlugin
   css: {
-    extract: true,
+    extract: false,
     sourceMap: false,
   },
   devServer: {
