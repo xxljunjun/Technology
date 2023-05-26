@@ -1,41 +1,40 @@
 <template>
   <div id="app">
-    <div class="header">项目头部</div>
-    <div class="content">
-      <navBar />
+    <div style="height:100vh;">
+    <div id="particles-js">
       <router-view></router-view>
     </div>
+   
+  </div>
+      
   </div>
 </template>
 
 <script>
-import navBar from "@/components/navBar.vue";
+  import particlesJs from "particles.js";
+  import particlesConfig from "@/components/particles/particles.json";
 export default {
   name: "App",
   data() {
     return {};
   },
   components: {
-    navBar,
   },
-  mounted() {},
-  methods: {},
+  mounted() {
+      this.init();
+    },
+  methods: {
+    init() {
+      particlesJs("particles-js", particlesConfig);
+        document.body.style.overflow = "hidden";
+      }
+  },
 };
 </script>
 
 <style lang="scss">
+@import "~@/components/particles/style.css";
 #app {
-  background-image: url(~@/assets/images/bg.png);
-  min-height: 100vh;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  .header {
-    height: 70px;
-    width: 100%;
-    background: rgba($color: red, $alpha: 0.4);
-  }
-  .content {
-    padding: 0 50px;
-  }
+  height: 100%;
 }
 </style>
