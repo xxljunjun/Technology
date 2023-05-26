@@ -14,7 +14,10 @@
         <rate/>
       </card>
     </div>
-    <div class="home-middle">222222</div>
+    <div class="home-middle">
+      <toopBox/>
+      <bottomBox/>
+    </div>
     <div class="home-right">
       <card title="耀斑统计">
         <totalNum/>
@@ -34,6 +37,8 @@
 
 <script>
 import card from '@/components/card/index.vue'
+import toopBox from '@/components/toopBox/index.vue'
+import bottomBox from '@/components/bottomBox/index.vue'
 import {
   nums,
   warnming,
@@ -59,7 +64,9 @@ export default {
     totalNum,
     electricity,
     flareNum,
-    monitoring
+    monitoring,
+    bottomBox,
+    toopBox
   },
 }
 </script>
@@ -70,14 +77,16 @@ export default {
   padding: 20px;
   .home-left{
     flex: 1;
-    margin-right: 50px;
+    margin-right: 20px;
   }
   .home-middle{
     flex: 3;
+    display: flex;
+    flex-direction: column;
   }
   .home-right{
     flex: 1;
-    margin-left: 50px;
+    margin-left: 20px;
   }
 }
 </style>
