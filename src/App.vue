@@ -1,40 +1,46 @@
 <template>
-  <div id="app">
-    <div style="height:100vh;">
-    <div id="particles-js">
-      <router-view></router-view>
-    </div>
-   
-  </div>
-      
+  <div id="particles-js">
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import particlesJs from "particles.js";
-  import particlesConfig from "@/components/particles/particles.json";
+import particlesJs from "particles.js";
+import particlesConfig from "@/components/particles/particles.json";
 export default {
   name: "App",
   data() {
     return {};
   },
-  components: {
-  },
+  components: {},
   mounted() {
-      this.init();
-    },
+    this.init()
+  },
   methods: {
     init() {
-      particlesJs("particles-js", particlesConfig);
-        document.body.style.overflow = "hidden";
-      }
+      particlesJS("particles-js", particlesConfig);
+      document.body.style.overflow = "hidden";
+    },
   },
 };
 </script>
 
 <style lang="scss">
-@import "~@/components/particles/style.css";
-#app {
-  height: 100%;
-}
+  #particles-js{
+
+width: 100%;
+ 
+ height: 100%;
+ 
+ background-color: #000;
+ 
+/* background-image: url('./img/5.jpg'); */
+ 
+ background-size: cover;
+ 
+ background-position: 50% 50%;
+ 
+ background-repeat: no-repeat;
+ 
+ }
 </style>
