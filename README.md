@@ -1,6 +1,1 @@
-### Technology
-```js
-//element-ui
-//sass
-//echarts
-```
+### 大屏项目

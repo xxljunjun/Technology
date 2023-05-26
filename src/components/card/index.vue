@@ -20,8 +20,14 @@
 
 <style lang="scss" scoped>
 .card{
-    width: 500px;
-    height: 300px;
-    border: 1px solid red;
+    width: 100%;
+   .topBox{
+    height: 40px;
+    box-shadow: 0 0 30px #0099b8 inset, 0 0 2px #0099b8;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   }
 }
 </style>

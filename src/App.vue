@@ -14,7 +14,7 @@ export default {
   },
   components: {},
   mounted() {
-    this.init()
+    this.init();
   },
   methods: {
     init() {
@@ -26,21 +26,22 @@ export default {
 </script>
 
 <style lang="scss">
-  #particles-js{
+#particles-js {
+  width: 100%;
 
-width: 100%;
- 
- height: 100%;
- 
- background-color: #000;
- 
-/* background-image: url('./img/5.jpg'); */
- 
- background-size: cover;
- 
- background-position: 50% 50%;
- 
- background-repeat: no-repeat;
- 
- }
+  height: 100%;
+
+  background-color: #000;
+
+  /* background-image: url('./img/5.jpg'); */
+
+  background-size: cover;
+
+  background-position: 50% 50%;
+
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
 </style>
