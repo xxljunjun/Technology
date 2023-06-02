@@ -18,8 +18,14 @@ export default {
   },
   methods: {
     init() {
-      particlesJS("particles-js", particlesConfig);
-      document.body.style.overflow = "hidden";
+      try {
+        console.log("particlesJs", particlesJs);
+        // eslint-disable-next-line no-unused-vars, no-undef
+        particlesJS("particles-js", particlesConfig);
+        document.body.style.overflow = "hidden";
+      } catch (e) {
+        console.log("背景出现失败的原因", e);
+      }
     },
   },
 };

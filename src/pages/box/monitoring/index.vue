@@ -29,6 +29,8 @@
     tooltip: { // 鼠标移到图里面的浮动提示框
      // formatter详细配置： https://echarts.baidu.com/option.html#tooltip.formatter
       formatter (params, ticket, callback) { 
+        console.log('ticket',ticket)
+        console.log('callback',callback)
         // params.data 就是series配置项中的data数据遍历
         let localValue,
           perf,

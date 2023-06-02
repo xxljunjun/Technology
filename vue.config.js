@@ -37,6 +37,7 @@ module.exports = {
     //展示图形化信息(上线钱注释掉)
     // config.plugin("webpack-bundle-analyzer").use(BundleAnalyzerPlugin);
   },
+  // eslint-disable-next-line no-unused-vars
   configureWebpack: (config) => {},
   //是否使用css分离插件 ExtractTextPlugin
   css: {
