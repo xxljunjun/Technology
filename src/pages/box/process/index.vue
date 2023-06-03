@@ -145,7 +145,8 @@ export default {
             
           }
         },
-        yAxis: {
+        yAxis:[
+        {
           type: "value", 
           show: true ,
           axisTick:{
@@ -156,7 +157,10 @@ export default {
             show:false //是否显示坐标轴轴线。
           },
           splitLine:{
-            show:true //背景网格线
+            show:true, //背景网格线
+            lineStyle:{
+              color:'#333333'
+            }
           },
           axisLabel:{
             // 刻度线的相关设置
@@ -165,20 +169,51 @@ export default {
           }
           // name:'纵坐标',
         },
+        {
+          type: "value", 
+          show: true ,
+          axisTick:{
+            show:false,  //刻度线
+            inside:true
+          },
+          axisLine:{
+            show:false //是否显示坐标轴轴线。
+          },
+          splitLine:{
+            show:true, //背景网格线
+            lineStyle:{
+              color:'#333333'
+            }
+          },
+          axisLabel:{
+            // 刻度线的相关设置
+            rotate:60,
+            formatter:'',
+          }
+          // name:'纵坐标',
+        },
+        ],
         series: [
           {
             name: "Email",
             data: [150, 230, 224, 218, 135, 147, 260],
             type: "line",
             symbol:'none', //去掉折线图中的节点
-                smooth: true  //true 为平滑曲线，false为直线
+            smooth: true,  //true 为平滑曲线，false为直线
+            label:{
+              show:false,
+              position:'insideTop',
+            },
+            step:false,
+            yAxisIndex:0,
           },
           {
             name: "shchool",
             data: [100, 210, 124, 118, 35, 47, 360],
             type: "line",
             symbol:'none', //去掉折线图中的节点
-                smooth: true  //true 为平滑曲线，false为直线
+            smooth: true , //true 为平滑曲线，false为直线
+            yAxisIndex:1,
           },
         ],
       };

@@ -27,25 +27,39 @@ export default {
         color: ["#07f8ff", "#004554", "#08697a"],
         tooltip: {
           trigger: "item",
-          show: true,
+          show: false,
+        },
+        
+        grid:{
+          // show:true,
+          // left:'0%',
+          // right:'80%'
         },
         //标题
         title: {
           show: false,
           // 主标题文本，'\n'指定换行
-          text: "iphone销量",
+          text: "销量",
           // 副标题文本，'\n'指定换行
-          subtext: "纯属虚构",
+          // subtext: "纯属虚构",
           // 水平安放位置，默认为左侧，可选为：'center' | 'left' | 'right' | {number}（x坐标，单位px）
           x: "center",
           // 垂直安放位置，默认为全图顶端，可选为：'top' | 'bottom' | 'center' | {number}（y坐标，单位px）
-          y: "top",
+          y: "center",
           // 水平对齐方式，默认根据x设置自动调整，可选为： left' | 'right' | 'center
           textAlign: "center",
+          textStyle:{
+            color:'#fff'
+          }
         },
         // 图例
         legend: {
-          show: false,
+          show: true,
+          type:'scroll',
+          orient: 'vertical',
+          x:'right',
+          y:'top',
+          padding:[60,30,0,0],
         },
         //数据
         series: [
@@ -54,14 +68,15 @@ export default {
             type: "pie",
             radius: ["40%", "70%"],
             avoidLabelOverlap: false,
+            right: '30%',
             label: {
-              show: false,
+              show: true,
               position: "center",
             },
             emphasis: {
               label: {
-                show: false,
-                fontSize: 40,
+                show: true,
+                fontSize: 16,
                 fontWeight: "bold",
               },
             },

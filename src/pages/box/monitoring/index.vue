@@ -6,7 +6,7 @@
  
  <script>
   import * as echarts from "echarts";
-  require('echarts/map/js/china')
+  // require('echarts/map/js/china')
  export default {
    data(){
      return {
