@@ -7,7 +7,7 @@ function resolve(dir) {
 //   .BundleAnalyzerPlugin;
 module.exports = {
   //部署正式环境时域名加前缀process.env.NODE_ENV
-  publicPath: "/",
+  publicPath: "/showscreen/",
   //将构建好的文件输出到哪里process.env.outputDir
   outputDir: "dist",
   //指定生成的index.html的输出路径
@@ -29,7 +29,7 @@ module.exports = {
     });
     //配置标题
     config.plugin("html").tap((args) => {
-      args[0].title = "Technology";
+      args[0].title = "科技大屏";
       return args;
     });
     //添加别名
